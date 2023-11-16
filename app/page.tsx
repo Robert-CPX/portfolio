@@ -1,4 +1,4 @@
-import { About, Contact, Experience, Hero, Projects, Skills, Tabbar, ThemeToggle } from './components'
+import { About, Contact, Experience, Hero, Projects, Skills, Header, ThemeToggle, Footer } from './components'
 
 const Home = () => {
   return (
@@ -7,13 +7,14 @@ const Home = () => {
         <div className='gradient'></div>
       </div>
       <div className='app'>
-        <Tabbar />
+        <Header />
         <Hero />
         <About />
         <Projects />
         <Skills />
         <Experience />
         <Contact />
+        <Footer />
       </div>
       <ThemeToggle />
     </div>

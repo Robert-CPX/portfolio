@@ -2,11 +2,25 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer components {
-  .tabbar {
-    @apply flex gap-2 bg-slate-300 dark:bg-slate-800 shadow-md rounded-[50px] h-[50px] w-[400px];
+@layer utilities {
+  .app {
+    @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6 pt-28;
   }
+  .text-footer {
+    @apply text-[12px] font-medium leading-[15.6px];
+  }
+  .text-navbar {
+    @apply text-[14px] font-medium leading-[16.2px];
+  }
+  .text_dark500_light600 {
+    @apply text-slate-600 dark:text-slate-500;
+  }
+  .text_dark400_light900 {
+    @apply text-slate-900  dark:text-slate-400;
+  }
+}
 
+@layer components {
   .theme_toggle {
     @apply absolute rounded-full bottom-6 shadow-lg right-6 w-[3rem] h-[3rem] flex justify-center items-center z-10 bg-slate-50 dark:invert bg-opacity-80 hover:scale-[1.15] transition-all active:scale-105;
   }
@@ -44,8 +58,4 @@
   filter: blur(100px) saturate(150%);
   top: 80px;
   opacity: 0.15;
-}
-
-.app {
-  @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6;
 }
