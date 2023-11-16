@@ -2,14 +2,19 @@ import { About, Contact, Experience, Hero, Projects, Skills, Tabbar } from './co
 
 const Home = () => {
   return (
-    <div className='flex flex-col items-center'>
-      <Tabbar />
-      <Hero />
-      <About />
-      <Projects />
-      <Skills />
-      <Experience />
-      <Contact />
+    <div>
+      <div className='main'>
+        <div className='gradient'></div>
+      </div>
+      <div className='app'>
+        <Tabbar />
+        <Hero />
+        <About />
+        <Projects />
+        <Skills />
+        <Experience />
+        <Contact />
+      </div>
     </div>
   )
 }
