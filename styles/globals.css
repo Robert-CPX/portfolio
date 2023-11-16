@@ -27,8 +27,14 @@
   .h2-medium {
     @apply text-xl sm:text-[28px] leading-[0.8] font-medium;
   }
-  .text-normal {
+  .h3-medium {
+    @apply text-lg sm:text-[26px] font-medium;
+  }
+  .text-aboutme {
     @apply text-base leading-[1.8] sm:leading-[2.2] font-normal;
+  }
+  .text-project_description {
+    @apply text-sm font-normal leading-[1.8];
   }
   .text-hero-action {
     @apply text-lg font-bold;

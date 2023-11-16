@@ -12,7 +12,7 @@ const About = () => {
       transition={{ delay: 0.175 }}
     >
       <h2 className='h2-medium text_dark200_light900'>About me</h2>
-      <p className='text-normal text_dark200_light900 mt-8 text-center'>{aboutme}</p>
+      <p className='text-aboutme text_dark200_light900 mt-8 text-center'>{aboutme}</p>
     </motion.section>
   )
 }

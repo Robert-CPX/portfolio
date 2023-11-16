@@ -1,7 +1,7 @@
 'use client'
 
 import { motion } from "framer-motion"
-import { Sections } from '@/lib/constant'
+import { sections } from '@/lib/constant'
 import Link from 'next/link'
 import { useActiveSection } from '@/context/ActiveSectionProvider'
 
@@ -18,7 +18,7 @@ const Header = () => {
       ></motion.div>
       <nav className='fixed left-1/2 top-1 flex h-[3rem] -translate-x-1/2 sm:top-6 sm:h-[3.5rem] sm:w-[36rem] sm:rounded-full'>
         <ul className='flex h-full w-full items-center justify-between sm:px-3'>
-          {Sections.map((section, index) => (
+          {sections.map((section, index) => (
             <motion.li
               key={index}
               className='relative flex h-3/5 items-center justify-center'
