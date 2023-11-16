@@ -2,9 +2,9 @@ import React from 'react'
 
 const Tabbar = () => {
   return (
-    <div>
-      Tabbar
-    </div>
+    <section className='tabbar'>
+
+    </section>
   )
 }
 

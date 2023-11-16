@@ -1,4 +1,4 @@
-import { About, Contact, Experience, Hero, Projects, Skills, Tabbar } from './components'
+import { About, Contact, Experience, Hero, Projects, Skills, Tabbar, ThemeToggle } from './components'
 
 const Home = () => {
   return (
@@ -15,6 +15,7 @@ const Home = () => {
         <Experience />
         <Contact />
       </div>
+      <ThemeToggle />
     </div>
   )
 }

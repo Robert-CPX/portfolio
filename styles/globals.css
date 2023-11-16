@@ -2,6 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .tabbar {
+    @apply flex gap-2 bg-slate-300 dark:bg-slate-800 shadow-md rounded-[50px] h-[50px] w-[400px];
+  }
+
+  .theme_toggle {
+    @apply absolute rounded-full bottom-6 shadow-lg right-6 w-[3rem] h-[3rem] flex justify-center items-center z-10 bg-slate-50 dark:invert bg-opacity-80 hover:scale-[1.15] transition-all active:scale-105;
+  }
+}
+
 .main {
   width: 100vw;
   min-height: 100vh;
