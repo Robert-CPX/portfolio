@@ -1,9 +1,15 @@
-import React from 'react'
+import { About, Contact, Experience, Hero, Projects, Skills, Tabbar } from './components'
 
 const Home = () => {
   return (
-    <div>
-      Home
+    <div className='flex flex-col items-center'>
+      <Tabbar />
+      <Hero />
+      <About />
+      <Projects />
+      <Skills />
+      <Experience />
+      <Contact />
     </div>
   )
 }
