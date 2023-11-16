@@ -4,7 +4,7 @@ import ProjectCard from './ProjectCard'
 
 const Projects = () => {
   return (
-    <section className='mt-28 flex flex-col items-center gap-12'>
+    <section className='flex flex-col items-center gap-12'>
       <h2 className='h2-medium text_dark200_light900'>My Projects</h2>
       {projects.map((project, index) => (
         <ProjectCard

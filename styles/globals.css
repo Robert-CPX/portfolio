@@ -4,7 +4,7 @@
 
 @layer utilities {
   .app {
-    @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6 pt-28;
+    @apply relative z-10 flex justify-center items-center flex-col max-w-7xl mx-auto sm:px-16 px-6 pt-28 gap-24;
   }
   .text-footer {
     @apply text-[12px] font-medium leading-[15.6px];

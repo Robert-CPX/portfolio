@@ -16,3 +16,7 @@ export const projects = [
   { title: "flow name service", description: "A name service build on Flow", tags: ["blockchain", "cadence", "flow", "next.js"], image: "/projects/flow.png" },
   { title: "inkgram", description: "a instagram-like app", tags: ['next.js', 'tailwindcss', 'appwrite'], image: "/projects/snapgram.png" },
 ]
+
+export const skills = [
+  'Next.js', 'React.js', 'TypeScript', 'Swift', 'TailwindCSS', 'Node.js', 'react-query', 'MongoDB', 'GraphQL', 'WebSocket',
+] as const;
