@@ -1,4 +1,4 @@
-import { About, Contact, Experience, Hero, Projects, Skills, Header, ThemeToggle, Footer } from './components'
+import { About, Contact, Experience, Hero, Projects, Skills, Header, ThemeToggle, Footer, SectionDivider } from './components'
 
 const Home = () => {
   return (
@@ -9,6 +9,7 @@ const Home = () => {
       <div className='app'>
         <Header />
         <Hero />
+        <SectionDivider />
         <About />
         <Projects />
         <Skills />

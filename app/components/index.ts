@@ -7,5 +7,6 @@ import Experience from "./Experience";
 import Contact from "./Contact";
 import ThemeToggle from "./ThemeToggle";
 import Footer from "./Footer";
+import SectionDivider from "./SectionDivider";
 
-export { Header, About, Skills, Projects, Hero, Experience, Contact, ThemeToggle, Footer }
+export { Header, About, Skills, Projects, Hero, Experience, Contact, ThemeToggle, Footer, SectionDivider }

@@ -24,6 +24,12 @@
   .text-hero {
     @apply text-2xl sm:text-[36px] leading-[1.2] text-center;
   }
+  .h2-medium {
+    @apply text-xl sm:text-[28px] leading-[0.8] font-medium;
+  }
+  .text-normal {
+    @apply text-base leading-[1.8] sm:leading-[2.2] font-normal;
+  }
   .text-hero-action {
     @apply text-lg font-bold;
   }
@@ -34,7 +40,7 @@
 
 @layer components {
   .theme_toggle {
-    @apply absolute rounded-full bottom-6 shadow-lg right-6 w-[3rem] h-[3rem] flex justify-center items-center z-10 bg-slate-50 dark:invert bg-opacity-80 hover:scale-[1.15] transition-all active:scale-105;
+    @apply fixed rounded-full bottom-6 shadow-lg right-6 w-[3rem] h-[3rem] flex justify-center items-center z-10 bg-slate-50 dark:invert bg-opacity-80 hover:scale-[1.15] transition-all active:scale-105;
   }
 }
 
