@@ -42,6 +42,9 @@
   .btn-transition {
     @apply focus:scale-[1.15] transition-all hover:scale-[1.15] active:scale-[1.15];
   }
+  .background-dark800_light200 {
+    @apply bg-slate-200 dark:bg-slate-800;
+  }
 }
 
 @layer components {
@@ -82,4 +85,21 @@
   filter: blur(100px) saturate(150%);
   top: 80px;
   opacity: 0.15;
+}
+
+.arrow-left {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #e2e8f0;
+}
+
+.arrow-right {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+
+  border-left: 10px solid #e2e8f0;
 }

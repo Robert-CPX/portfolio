@@ -20,3 +20,9 @@ export const projects = [
 export const skills = [
   'Next.js', 'React.js', 'TypeScript', 'Swift', 'TailwindCSS', 'Node.js', 'react-query', 'MongoDB', 'GraphQL', 'WebSocket',
 ] as const;
+
+export const experiences = [
+  { type: 'coding', title: 'Full-Stack Developer', location: 'Shanghai', description: "Based on off-the-shelf design solutions, I have completed several applications.", date: 'Aug 2023 - Present' },
+  { type: 'work', title: 'Mobile Developer', location: 'Shanghai', description: "I managed a team of suppliers to develop china version of VolvoCars App. Collaborated with global team to develop global version of VolvoCars App. During this period, my team significantly increased the speed of delivery of domestic products, I received Employee of the Quarter.", date: '08/2021 - 06/2023' },
+  { type: 'work', title: 'iOS Developer', location: 'Shanghai', description: "I led a team of 4 iOS native developers and worked with cross-platform teams on 4 company products. During this period, We reimplemented 80% of the native app's functionality in React, removing more than half of the native code.", date: '10/2017 - 08/2021' },
+]

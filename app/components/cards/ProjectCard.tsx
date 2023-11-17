@@ -15,7 +15,7 @@ const ProjectCard = ({
 }: ProjectCardProps) => {
   return (
     <motion.section
-      className={`flex h-[20rem] w-full items-start rounded-lg border bg-slate-200 hover:bg-slate-300 dark:border-none dark:bg-slate-800 dark:hover:bg-slate-700 ${isEven ? 'sm:flex-row-reverse' : 'sm:flex-row'} transition`}
+      className={`background-dark800_light200 flex h-[20rem] w-full items-start rounded-lg border hover:bg-slate-300 dark:border-none dark:hover:bg-slate-700 ${isEven ? 'sm:flex-row-reverse' : 'sm:flex-row'} transition`}
     >
       <div className='my-8 ml-8 flex flex-col items-start gap-3 sm:w-1/2'>
         <p className='text_dark200_light900 h3-medium'>{title}</p>
