@@ -3,11 +3,11 @@
 import { motion } from "framer-motion"
 import { sections } from '@/lib/constant'
 import Link from 'next/link'
-import { useActiveSection } from '@/context/ActiveSectionProvider'
+import { useActiveSectionContext } from '@/context/ActiveSectionProvider'
 
 const Header = () => {
 
-  const { activeSection, setActiveSection } = useActiveSection()
+  const { activeSection, setActiveSection } = useActiveSectionContext()
 
   return (
     <header className='relative z-[900]'>

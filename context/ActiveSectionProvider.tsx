@@ -23,7 +23,7 @@ const ActiveSectionProvider = ({
   )
 }
 
-export const useActiveSection = () => {
+export const useActiveSectionContext = () => {
   const activeSectionContext = useContext(ActiveSectionContext)
   if (!activeSectionContext) throw new Error('useActiveSection must be used within ActiveSectionProvider')
   return activeSectionContext

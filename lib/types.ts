@@ -1,3 +1,3 @@
-import { Sections } from "./constant";
+import { sections } from "./constant";
 
-export type SectionName = (typeof Sections)[number]["name"];
+export type SectionName = (typeof sections)[number]["name"];

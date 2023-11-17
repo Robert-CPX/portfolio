@@ -2,10 +2,12 @@
 import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from "framer-motion";
+import { useSectionInView } from '@/lib/hooks';
 
 const Hero = () => {
+  const { ref } = useSectionInView("Home", 0.5)
   return (
-    <section className='-mt-16 flex flex-col items-center'>
+    <section id='home' ref={ref} className='-mt-16 flex scroll-mt-[10rem] flex-col items-center'>
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}

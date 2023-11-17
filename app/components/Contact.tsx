@@ -3,19 +3,22 @@
 import React from 'react'
 import { useFormStatus } from "react-dom";
 import Image from 'next/image'
+import SectionHeader from './SectionHeader';
+import { useSectionInView } from '@/lib/hooks';
 
 const Contact = () => {
+  const { ref } = useSectionInView("Contact")
   const { pending } = useFormStatus();
-  function handleEmailToMe(formData) {
+  function handleEmailToMe(formData: any) {
     const email = formData.get("email");
     const message = formData.get("message");
     console.log(email, message)
   }
 
   return (
-    <div className='flex w-full flex-col items-center'>
+    <div id="contact" ref={ref} className='flex w-full flex-col items-center'>
       <div className='flex flex-col items-center gap-4'>
-        <h2 className='h2-medium text_dark200_light900'>Contact Me</h2>
+        <SectionHeader>Contact me</SectionHeader>
         <p className='text_dark200_light900'>Please contact me directly at <a href='mailto:hi@robbdev.xyz' className='underline'>hi@robbdev.xyz</a> or through this form.</p>
       </div>
       <form className='mt-8 flex w-full max-w-2xl flex-col gap-4' action={handleEmailToMe}>
