@@ -6,7 +6,7 @@ import SectionHeader from './SectionHeader'
 import { useSectionInView } from '@/lib/hooks'
 
 const Skills = () => {
-  const { ref } = useSectionInView("Skills")
+  const { ref } = useSectionInView("Skills", 1)
   return (
     <section id='skills' ref={ref} className='flex w-full scroll-mt-28 flex-col items-center gap-12'>
       <SectionHeader>My Skills</SectionHeader>

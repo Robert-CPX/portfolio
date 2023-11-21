@@ -3,15 +3,11 @@
 import React from 'react'
 import { experiences } from '@/lib/constant'
 import SectionHeader from './SectionHeader'
-import Image from 'next/image'
 import { Chrono } from 'react-chrono'
-
-import { useTheme } from '@/context/ThemeProvider'
 import { useSectionInView } from '@/lib/hooks';
 
 const Experience = () => {
-  const { theme } = useTheme()
-  const { ref } = useSectionInView("Experience");
+  const { ref } = useSectionInView("Experience", 0.5);
   return (
     <section id='experience' ref={ref} className='mb-28 scroll-mt-28 sm:mb-40'>
       <SectionHeader>My experience</SectionHeader>

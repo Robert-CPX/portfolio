@@ -7,7 +7,7 @@ import { useActiveSectionContext } from '@/context/ActiveSectionProvider'
 
 const Header = () => {
 
-  const { activeSection, setActiveSection } = useActiveSectionContext()
+  const { activeSection, setActiveSection, setTimeOfLastClick } = useActiveSectionContext()
 
   return (
     <header className='relative z-[900]'>
@@ -30,6 +30,7 @@ const Header = () => {
                 className={`text-navbar w-full p-4 ${activeSection === section.name ? "text_dark400_light900" : "text_dark500_light600 hover:text-slate-900 hover:dark:text-slate-400"}`}
                 onClick={() => {
                   setActiveSection(section.name)
+                  setTimeOfLastClick(Date.now())
                 }}
               >
                 {section.name}
