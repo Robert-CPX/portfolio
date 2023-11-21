@@ -5,14 +5,20 @@ import { useFormStatus } from "react-dom";
 import Image from 'next/image'
 import SectionHeader from './SectionHeader';
 import { useSectionInView } from '@/lib/hooks';
+import { sendEmail } from '@/actions/sendEmail';
+import { toast } from 'react-toastify';
 
 const Contact = () => {
   const { ref } = useSectionInView("Contact")
   const { pending } = useFormStatus();
-  function handleEmailToMe(formData: any) {
-    const email = formData.get("email");
-    const message = formData.get("message");
-    console.log(email, message)
+
+  const handleEmailToMe = async (formData: any) => {
+    const { error } = await sendEmail(formData);
+    if (error) {
+      toast('something went wrong, please try again later')
+      return
+    }
+    toast('Email sent successfully')
   }
 
   return (

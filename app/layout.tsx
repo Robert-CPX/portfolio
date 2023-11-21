@@ -4,6 +4,8 @@ import { Inter } from 'next/font/google'
 import '../styles/globals.css'
 import ThemeProvider from '@/context/ThemeProvider'
 import ActiveSectionProvider from '@/context/ActiveSectionProvider'
+import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -24,6 +26,7 @@ export default function RootLayout({
           <ActiveSectionProvider>
             {children}
           </ActiveSectionProvider>
+          <ToastContainer />
         </ThemeProvider>
       </body>
     </html>
