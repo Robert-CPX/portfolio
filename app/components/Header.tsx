@@ -24,7 +24,6 @@ const Header = () => {
               className='relative flex h-3/5 items-center justify-center'
               initial={{ y: -100, opacity: 0 }}
               animate={{ y: 0, opacity: 1 }}
-              transition={{ delay: 0.05 * index }}
             >
               <Link
                 href={section.hash}

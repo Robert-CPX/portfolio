@@ -45,6 +45,26 @@
   .background-dark800_light200 {
     @apply bg-slate-200 dark:bg-slate-800;
   }
+
+  /* experience timeline */
+
+  .my_timeline_card {
+    @apply bg-slate-100 dark:bg-slate-400 shadow-lg;
+  }
+
+  .my_timeline_cardSubTitle {
+    @apply text-slate-900 dark:text-slate-50;
+  }
+  .my_timeline_cardTitle {
+    @apply text-slate-900 dark:text-slate-50;
+  }
+  .my_timeline_cardText {
+    @apply text-slate-900 dark:text-slate-50;
+  }
+
+  .my_timeline_title {
+    @apply text-slate-900 dark:text-slate-50;
+  }
 }
 
 @layer components {
