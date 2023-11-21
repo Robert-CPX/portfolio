@@ -39,7 +39,7 @@ const Hero = () => {
           Contact me here
           <Image className='invert' src='/arrow-right.svg' alt='arrow' width={20} height={20} />
         </Link>
-        <Link href="/" className='text-hero-action text_dark200_light900 btn-transition flex h-[3.5rem] w-[13rem] items-center gap-2 rounded-[3rem] border bg-white px-7 py-2 dark:border-none dark:bg-slate-500'>
+        <Link href="/cv.pdf" download={true} className='text-hero-action text_dark200_light900 btn-transition flex h-[3.5rem] w-[13rem] items-center gap-2 rounded-[3rem] border bg-white px-7 py-2 dark:border-none dark:bg-slate-500'>
           Download CV
           <Image className='dark:invert' src='/download.svg' alt='download' width={20} height={20} />
         </Link>
