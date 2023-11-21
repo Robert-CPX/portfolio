@@ -7,7 +7,7 @@ import { useSectionInView } from '@/lib/hooks';
 const Hero = () => {
   const { ref } = useSectionInView("Home", 0.5)
   return (
-    <section id='home' ref={ref} className='-mt-16 flex scroll-mt-[10rem] flex-col items-center'>
+    <section id='home' ref={ref} className='-mt-16 flex scroll-mt-[100rem] flex-col items-center'>
       <motion.div
         initial={{ opacity: 0, scale: 0 }}
         animate={{ opacity: 1, scale: 1 }}
